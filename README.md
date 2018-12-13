@@ -23,7 +23,7 @@ Console][cloud-console]
 - [Enable billing][billing] and the [Vision API][enable-vision].
 - Create an [API key][api-key], and save this for later.
 
-- Clone this `cloud-vision` repository on GitHub. If you have [`git`][git] installed, you can do this by executing the following command:
+- Clone this `ImageAnalysis` repository on GitHub. If you have [`git`][git] installed, you can do this by executing the following command:
 
 $ git clone https://github.com/bus16/ImageAnalysis.git
 
@@ -44,7 +44,7 @@ Otherwise, GitHub offers an [auto-generated zip file][vision-zip] of the `master
 - Select an image from your device. If you're using the simulator, you can drag and drop an image from your computer into the simulator using Finder.
 - This executes the `imagePickerController`, which saves the selected image and calls the `base64EncodeImage` function. This function base64 encodes the image and resizes it if it's too large to send to the API.
 - The `sendImageData` method creates and executes a label detection request to the Cloud Vision API.
-- When the API responds, the `parse` function is called. This method constructs a string of the labels returned from the API. It then displays the label results in the UI by populating the `LABELS` and `SCORE` `UITableView` with the data returned from the API.
+- When the API responds, the `parse` function is called. This method constructs a string of the labels returned from the API. It then displays the label results in the UI by populating the `LABELS` and `SCORE` in `UITableView` with the data returned from the API.
 
 [how-to]: https://cloud.google.com/vision/docs/how-to
 [vision-zip]: https://github.com/GoogleCloudPlatform/cloud-vision/archive/master.zip
